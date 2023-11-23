@@ -38,20 +38,17 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     User.init({
-        name: {
-            type: DataTypes.STRING,
-            validate: {
-                notEmpty: {
-                    msg: 'Please enter your Name'
-                }
-            }
+        username: {
+            type: DataTypes.STRING
         },
         email: {
             type: DataTypes.STRING,
+            unique: true,
             validate: {
                 notEmpty: {
                     msg: 'Please enter your Email'
-                }
+                },
+                isEmail: true
             }
         },
         password: {
@@ -61,8 +58,8 @@ module.exports = (sequelize, DataTypes) => {
                     msg: 'Please enter your Password'
                 },
                 validatePasswordMin(value) {
-                    if (value.length < 7) {
-                        throw "Minimum Length Password is 7";
+                    if (value.length < 8) {
+                        throw "Minimum Length Password is 8";
                     }
                 }
             }

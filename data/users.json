@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Gema Admin",
+    "username": "gemaadmin",
     "email": "gemaadmin@gmail.com",
     "password": "12345678",
     "role": 1,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Gema Customer",
+    "username": "gemacustomer",
     "email": "gemacustomer@gmail.com",
     "password": "12345678",
     "role": 2,

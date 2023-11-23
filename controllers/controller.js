@@ -236,9 +236,20 @@ class Controller {
 
     static async postRegister(req, res) {
         try {
-            let {name, email, password} = req.body;
+            let {username, email, password} = req.body;
+
+            let user = await User.findOne({
+                where: {
+                    email: email
+                }
+            });
+
+            if(user){
+                throw {name: "validation", errors: ["Email Already Registered"]};
+            }
+
             await User.create({
-                name, email, password
+                username, email, password
             });
 
             const transporter = createTransport({
