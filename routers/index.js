@@ -8,19 +8,6 @@ const companies = require('./companies')
 const transactions = require('./transactions')
 const balanceHistories = require('./balanceHistories')
 
-
-router.get('/tes', (req, res) => {
-    req.session.user_id = 1;
-    req.session.role = 1;
-    res.redirect('/admin')
-})
-
-// router.get('/tes', (req, res) => {
-//     req.session.user_id = 2;
-//     req.session.role = 2;
-//     res.redirect('/companies')
-// })
-
 router.get('/login', guestOnly, Controller.login)
 router.post('/login', guestOnly, Controller.postLogin)
 
