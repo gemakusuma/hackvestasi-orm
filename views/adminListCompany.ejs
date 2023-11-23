@@ -7,6 +7,10 @@
 <%- include('navbarAdmin'); %>
 <div class="container" style="margin-top: 30px;">
     <div id="container-home">
+
+        <% errors.forEach(item => { %>
+            <li style="color:red;"><%= item %></li>
+        <% }) %>
         <div class="row" id="listVendor">
             <% companies.forEach(item => { %>
                 <div class="col-lg-3" style="margin-top:5px;">

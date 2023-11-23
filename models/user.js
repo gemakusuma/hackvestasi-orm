@@ -5,7 +5,6 @@ const {
 const Helper = require('../helpers/helper')
 
 
-
 module.exports = (sequelize, DataTypes) => {
     class User extends Model {
         /**
@@ -32,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
         }
 
 
-        get balanceRupiahFormat(){
+        get balanceRupiahFormat() {
             return Helper.currencyFormat(this.balance);
         }
 
@@ -60,6 +59,11 @@ module.exports = (sequelize, DataTypes) => {
             validate: {
                 notEmpty: {
                     msg: 'Please enter your Password'
+                },
+                validatePasswordMin(value) {
+                    if (value.length < 7) {
+                        throw "Minimum Length Password is 7";
+                    }
                 }
             }
         },

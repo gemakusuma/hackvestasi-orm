@@ -8,6 +8,11 @@ const companies = require('./companies')
 const transactions = require('./transactions')
 const balanceHistories = require('./balanceHistories')
 
+
+router.get('/', (req, res) => {
+    res.redirect('/login')
+})
+
 router.get('/login', guestOnly, Controller.login)
 router.post('/login', guestOnly, Controller.postLogin)
 

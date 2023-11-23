@@ -24,30 +24,31 @@
                             <p class="">
                                 <%= company.description %>
                             </p>
-                            <p class="card-text">Tingkat Resiko: <b><%= company.risk_level %></b></p>
+                            <p class="card-text">Tingkat Resiko: <b><%= company.riskLevelWord %></b></p>
                             <p class="card-text">Return Investasi: <br><b
-                                        class="growth-text-${styleGrowth}"><%= company.growth %>%</b></p>
+                                        class="growth-text-<%= company.growthFlag %>"><%= company.growth %>%</b></p>
+
 
                             <div class="progress" id="progressBar">
-                                <!--                            <div class="progress-bar" role="progressbar" style="width: 8.52%" aria-valuenow="15"-->
-                                <!--                                 aria-valuemin="0" aria-valuemax="100"></div>-->
-                                <!--                            <div class="progress-bar bg-success" role="progressbar" style="width: 58.62%"-->
-                                <!--                                 aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>-->
-                                <!--                            <div class="progress-bar bg-info" role="progressbar" style="width: 32.86%"-->
-                                <!--                                 aria-valuenow="20"-->
-                                <!--                                 aria-valuemin="0" aria-valuemax="100"></div>-->
+                                <div class="progress-bar" role="progressbar" style="width: <%= company.CompanyDetail.obligasi_pemerintah %>%" aria-valuenow="15"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: <%= company.CompanyDetail.obligasi_korporasi %>%"
+                                     aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-info" role="progressbar" style="width: <%= company.CompanyDetail.pasar_uang %>%"
+                                     aria-valuenow="20"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-3 col-sm-3" id="detailKiriAllocationAsset">
-                                    <!--                                <div class="obligasi-pemerintah" style="">Obligasi Pemerintah</div>-->
-                                    <!--                                <div class="obligasi-korporasi" style="">Obligasi Korporasi</div>-->
-                                    <!--                                <div class="pasar-uang" style="">Pasar Uang</div>-->
+                                    <div class="obligasi-pemerintah" style="">Obligasi Pemerintah</div>
+                                    <div class="obligasi-korporasi" style="">Obligasi Korporasi</div>
+                                    <div class="pasar-uang" style="">Pasar Uang</div>
                                 </div>
                                 <div class="col-lg-6 col-md-3 col-sm-3" style="text-align:right;"
                                      id="detailKananAllocationAsset">
-                                    <!--                                <div class="obligasi-pemerintah">8.52%</div>-->
-                                    <!--                                <div class="obligasi-korporasi">58.62%</div>-->
-                                    <!--                                <div class="pasar-uang">32.86%</div>-->
+                                    <div class="obligasi-pemerintah"><%= company.CompanyDetail.obligasi_pemerintah %>%</div>
+                                    <div class="obligasi-korporasi"><%= company.CompanyDetail.obligasi_korporasi %>%</div>
+                                    <div class="pasar-uang"><%= company.CompanyDetail.pasar_uang %>%</div>
                                 </div>
                             </div>
 

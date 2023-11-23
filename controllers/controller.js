@@ -34,6 +34,7 @@ class Controller {
         try {
             let errors = Helper.getErrors(req.query)
             let company = await Company.findOne({
+                include: CompanyDetail,
                 where: {
                     id: req.params.id
                 }
@@ -208,7 +209,6 @@ class Controller {
                 }
             }
         } catch (error) {
-            console.log(error)
             Helper.setErrors(res, error, '/login')
         }
     }
@@ -254,7 +254,7 @@ class Controller {
                 from: 'dityaksm21@gmail.com',
                 to: email,
                 subject: `Welcome to Hackvestasi`,
-                html : '<h1> Selamat Datang di Hackvestasi, disini kamu bisa berinvestasi dengan tenang. </h1>'
+                html : '<h3> Selamat Datang di Hackvestasi, disini kamu bisa berinvestasi dengan tenang dan aman. </h3>'
             })
 
 
@@ -267,9 +267,10 @@ class Controller {
 
     static async adminListCompany(req, res) {
         try {
+            let errors = Helper.getErrors(req.query)
             let companies = await Company.findAll();
 
-            res.render("adminListCompany", {companies});
+            res.render("adminListCompany", {companies, errors});
         } catch (error) {
             res.send(error);
         }
@@ -352,6 +353,12 @@ class Controller {
     }
     static async adminDeleteCompany(req, res) {
         try {
+            await CompanyDetail.destroy({
+                where: {
+                    company_id: req.params.id
+                }
+            });
+
             await Company.destroy({
                 where: {
                     id: req.params.id
@@ -360,7 +367,7 @@ class Controller {
 
             res.redirect('/admin')
         } catch (error) {
-            res.send(error);
+            Helper.setErrors(res, error, `/admin`)
         }
     }
 

@@ -33,6 +33,8 @@ class Helper {
             res.redirect(`${url}?errors=${error}`)
         } else if (error?.name === "validation") {
             res.redirect(`${url}?errors=${error.errors}`)
+        } else if (error?.name === "SequelizeForeignKeyConstraintError") {
+            res.redirect(`${url}?errors=Data Tidak Bisa Dihapus`)
         } else {
             res.send(error);
         }
