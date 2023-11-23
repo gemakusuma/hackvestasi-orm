@@ -2,32 +2,34 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Companies', {
+    await queryInterface.createTable('CompanyDetails', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
+      company_id: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: 'Companies'
+          },
+          key: 'id'
+        },
       },
-      description: {
-        allowNull: false,
-        type: Sequelize.TEXT
-      },
-      image: {
-        allowNull: false,
-        type: Sequelize.STRING
-      },
-      risk_level: {
+      obligasi_pemerintah: {
         allowNull: false,
         type: Sequelize.INTEGER
       },
-      growth: {
+      obligasi_korporasi: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
+      },
+      pasar_uang: {
+        allowNull: false,
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
@@ -40,6 +42,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Companies');
+    await queryInterface.dropTable('CompanyDetails');
   }
 };

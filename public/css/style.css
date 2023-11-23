@@ -1,0 +1,100 @@
+
+.center {
+    text-align: center;
+}
+
+.floatRight {
+    float: right;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.card-form-input {
+    padding: 20px;
+}
+
+.growth-text-green {
+    color: #0ae10e;
+}
+
+
+.growth-text-red {
+    color: #e00909;
+}
+
+.obligasi-pemerintah {
+    color: #007bff;
+}
+
+.obligasi-korporasi {
+    color: #28a745;
+}
+
+.pasar-uang {
+    color: #17a2b8;
+}
+
+
+.side-bar-history img {
+    width: 230px;
+    height: 160px;
+    float: left;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+.side-bar-history-text p {
+    font-size: 13px;
+}
+
+.side-bar-history-text {
+    padding-top: 30px;
+}
+
+.riwayat {
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: solid 1px gainsboro;
+    margin-top: 20px;
+}
+
+.side-right {
+    padding-top: 65px;
+    font-size: 13px;
+}
+
+#text-obli {
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .side-bar-history img {
+        float: none;
+    }
+
+
+    .side-right {
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+
+    .side-bar-history-text p {
+        padding-left: 15px;
+    }
+
+    .side-right-bottom {
+        padding-left: 15px;
+    }
+
+    #detailKiriAllocationAsset {
+        float: left;
+        position: absolute;
+    }
+}
+
+

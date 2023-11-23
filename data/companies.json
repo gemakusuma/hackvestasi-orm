@@ -4,79 +4,129 @@
     "name": "Dana Reksa Investment Management",
     "description": "Dana Reksa Investment Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang tentang Pasar Modal beserta peraturan pelaksanaannya. <br><br> Dana Reksa Investment Management tidak termasuk instrumen investasi yang dijamin oleh Pemerintah ataupun Bank Indonesia. Sebelum membeli Unit Penyertaan, calon investor harus terlebih dahulu mempelajari dan memahami Prospektus dan dokumen penawaran lainnya. Isi dari Prospektus dan dokumen penawaran lainnya bukanlah suatu saran baik dari sisi bisnis, hukum, maupun pajak. Oleh karena itu, calon Pemegang Unit Penyertaan disarankan untuk meminta pertimbangan atau nasehat dari pihak-pihak yang berkompeten sehubungan dengan investasi dalam Dana Reksa Investment Management. Calon Pemegang Unit Penyertaan harus menyadari bahwa terdapat kemungkinan pemegang Unit Penyertaan akan menanggung risiko sehubungan dengan Unit Penyertaan yang dipegangnya. Sehubungan dengan kemungkinan adanya risiko tersebut, apabila dianggap perlu calon Pemegang Unit Penyertaan dapat meminta pendapat dari pihak-pihak yang berkompeten atas aspek bisnis, hukum, keuangan, pajak, maupun aspek lain yang relevan. <br><br> Perkiraan yang terdapat dalam prospektus yang menunjukan indikasi hasil investasi dari Dana Reksa Investment Management hanyalah perkiraan dan tidak ada kepastian atau jaminan bahwa Pemegang Unit Penyertaan akan memperoleh hasil investasi yang sama dimasa yang akan datang, dan indikasi ini bukan merupakan janji atau jaminan dari Manajer Investasi atas Target Hasil Investasi maupun potensi hasil investasi yang akan diperoleh oleh calon Pemegang Unit Penyertaan. Perkiraan tersebut akan dapat berubah sebagai akibat dari berbagai faktor, termasuk antara lain faktor-faktor yang telah diungkapkan dalam Bab VIII mengenai Faktor-Faktor Risiko Investasi.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG5_IlgUGsQL4Zqud7W4Bw1_2fVWl8HZnv-SJQBl3IhW4G6aeK083J8sz_mskSaIvS3IU&usqp=CAU",
-    "riskLevel": 1,
-    "growth": 15
+    "risk_level": 1,
+    "growth": 15,
+    "allocationAssets": {
+      "obligasi_pemerintah": 100,
+      "obligasi_korporasi": 0,
+      "pasar_uang": 0
+    }
   },
   {
     "id": 2,
     "name": "Mirae Assets Management",
     "image": "https://rec-data.kalibrr.com/www.kalibrr.com/logos/GF54H9ZS6QN3T5BEAW28D7ZW7RAHGN4FA7U8QK8K-5fdb0fee.png",
-    "description": "Reksa Dana Mirae Assets Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang No.8 tahun 1995 tentang Pasar Modal dan peraturan pelaksanaannya. <br><br> Mirae Assets Management bertujuan untuk mempertahankan nilai investasi awal dan menghasilkan tingkat pengembalian yang stabil dan optimal melalui investasi pada Instrumen Pasar Uang dan atau Efek Bersifat Utang yang diterbitkan oleh pemerintah Republik Indonesia dan korporasi yang berdomisili di Indonesia yang jatuh temponya kurang dari 1 (satu) tahun.",
-    "riskLevel": 3,
-    "growth": -3
+    "description": "Reksa Dana Mirae Assets Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang No.8 tahun 1995 tentang Pasar Modal dan peraturan pelaksanaannya. <br><br> Mirae Assets Management bertujuan untuk mempertahankan nilai investasi awal dan menghasilkan tingkat pengembalian yang stabil dan optimal melalui investasi pada Instrumen pasar_uang dan atau Efek Bersifat Utang yang diterbitkan oleh pemerintah Republik Indonesia dan korporasi yang berdomisili di Indonesia yang jatuh temponya kurang dari 1 (satu) tahun.",
+    "risk_level": 3,
+    "growth": -3,
+    "allocationAssets": {
+      "obligasi_pemerintah": 0,
+      "obligasi_korporasi": 30,
+      "pasar_uang": 70
+    }
   },
   {
     "id": 3,
     "name": "Kresna Assets Management",
     "image": "https://media.bareksa.com/cms/media/assets/image/2020/08/15976_76607c007abb80d3a891dfa3622ea0b6.jpg",
-    "description": "Reksa Dana Kresna Assets Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang tentang Pasar Modal beserta peraturan pelaksanaannya. <br><br> Kresna Assets Management akan menginvestasikan dananya dengan komposisi investasi sebesar 100% (seratus persen) pada instrumen pasar uang dan/atau setara kas dan/atau efek bersifat hutang dengan jatuh tempo tidak lebih dari 1 (satu) tahun dan/atau sisa jatuh temponya tidak lebih dari 1 (satu) tahun meliputi obligasi dan surat hutang lainnya yang mempunyai jatuh tempo tidak lebih dari 1 (satu) tahun dan/atau sisa jatuh temponya tidak lebih dari 1 (satu) tahun, yang diterbitkan berdasarkan peraturan perundang-undangan yang berlaku di Indonesia.",
-    "riskLevel": 2,
-    "growth": 7
+    "description": "Reksa Dana Kresna Assets Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang tentang Pasar Modal beserta peraturan pelaksanaannya. <br><br> Kresna Assets Management akan menginvestasikan dananya dengan komposisi investasi sebesar 100% (seratus persen) pada instrumen pasar_uang dan/atau setara kas dan/atau efek bersifat hutang dengan jatuh tempo tidak lebih dari 1 (satu) tahun dan/atau sisa jatuh temponya tidak lebih dari 1 (satu) tahun meliputi obligasi dan surat hutang lainnya yang mempunyai jatuh tempo tidak lebih dari 1 (satu) tahun dan/atau sisa jatuh temponya tidak lebih dari 1 (satu) tahun, yang diterbitkan berdasarkan peraturan perundang-undangan yang berlaku di Indonesia.",
+    "risk_level": 2,
+    "growth": 7,
+    "allocationAssets": {
+      "obligasi_pemerintah": 40,
+      "obligasi_korporasi": 30,
+      "pasar_uang": 30
+    }
   },
   {
     "id": 4,
     "name": "Capital Assets Management",
     "image": "https://amii.s3.amazonaws.com/uploads/member/image2/602/capital.png",
-    "description": "Capital Assets Management bertujuan untuk mendapatkan peningkatan investasi yang tinggi dalam jangka panjang. <br><br> Capital Assets Management akan berinvestasi dengan komposisi portofolio investasi minimum 80% (delapan puluh persen) dan maksimum 100% (seratus persen) pada Efek bersifat ekuitas yang diterbitkan melalui Penawaran Umum dan/atau dicatatkan di Bursa Efek baik di dalam maupun di luar negeri. <br><br> serta minimum 0% (nol persen) dan maksimum 20% (dua puluh persen) pada Efek bersifat utang yang diterbitkan melalui Penawaran Umum dan/atau dicatatkan di Bursa Efek baik di dalam maupun di luar negeri (Efek bersifat utang tersebut termasuk dalam 20% (dua puluh persen) instrumen pasar uang yang mempunyai jatuh tempo kurang dari 1 (satu) tahun dan diterbitkan berdasarkan peraturan perundang-undangan yang berlaku di Indonesia.",
-    "riskLevel": 2,
-    "growth": 4
+    "description": "Capital Assets Management bertujuan untuk mendapatkan peningkatan investasi yang tinggi dalam jangka panjang. <br><br> Capital Assets Management akan berinvestasi dengan komposisi portofolio investasi minimum 80% (delapan puluh persen) dan maksimum 100% (seratus persen) pada Efek bersifat ekuitas yang diterbitkan melalui Penawaran Umum dan/atau dicatatkan di Bursa Efek baik di dalam maupun di luar negeri. <br><br> serta minimum 0% (nol persen) dan maksimum 20% (dua puluh persen) pada Efek bersifat utang yang diterbitkan melalui Penawaran Umum dan/atau dicatatkan di Bursa Efek baik di dalam maupun di luar negeri (Efek bersifat utang tersebut termasuk dalam 20% (dua puluh persen) instrumen pasar_uang yang mempunyai jatuh tempo kurang dari 1 (satu) tahun dan diterbitkan berdasarkan peraturan perundang-undangan yang berlaku di Indonesia.",
+    "risk_level": 2,
+    "growth": 4,
+    "allocationAssets": { 
+      "obligasi_pemerintah": 50,
+      "obligasi_korporasi": 40,
+      "pasar_uang": 10
+    }
   },
   {
     "id": 5,
     "name": "Panin Assets Management",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM03X4DquFHUCok7SD4RzyVT9qGKiKmW6srw&usqp=CAU",
     "description": "Reksa Dana Panin Assets Management (selanjutnya disebut “Panin Assets Management“) adalah Reksa Dana berbentuk Kontrak Investasi Kolektif (“KIK”) berdasarkan Undang-Undang No.8 tahun 1995 tentang Pasar Modal (“Undang-Undang Pasar Modal”) beserta peraturan pelaksanaannya. <br><br> Panin Assets Management mempunyai tujuan untuk menghasilkan peningkatan modal dengan berinvestasi pada saham-saham dari perusahaan-perusahaan yang bergerak dalam sektor-sektor yang memiliki posisi yang baik di bursa dengan memanfaatkan peluang-peluang yang ada pada perekonomian Indonesia dan global, serta memberikan kinerja investasi jangka panjang yang optimal.",
-    "riskLevel": 2,
-    "growth": 4
+    "risk_level": 2,
+    "growth": 4,
+    "allocationAssets": { 
+      "obligasi_pemerintah": 50,
+      "obligasi_korporasi": 40,
+      "pasar_uang": 10
+    }
   },
   {
     "id": 6,
     "name": "BNI Asset Management",
     "image": "https://www.bni-am.co.id/uploads/topics/16802816627765.jpg",
     "description": "BNI Asset Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif (“KIK”) berdasarkan Undang-Undang No.8 tahun 1995 tentang Pasar Modal ('Undang-Undang Pasar Modal') beserta peraturan pelaksanaannya. <br><br> Tujuan investasi BNI Asset Management adalah untuk menghasilkan peningkatan modal dengan berinvestasi pada saham-saham sesuai prinsip-prinsip Syariah di Pasar Modal dari perusahaan-perusahaan yang bergerak dalam sektor-sektor yang memiliki posisi yang baik di bursa dengan memanfaatkan peluang-peluang yang ada pada perekonomian Indonesia dan global,  serta memberikan kinerja investasi jangka panjang yang optimal",
-    "riskLevel": 2,
-    "growth": 9
+    "risk_level": 2,
+    "growth": 9,
+    "allocationAssets": {
+      "obligasi_pemerintah": 40,
+      "obligasi_korporasi": 40,
+      "pasar_uang": 20
+    }
   },
   {
     "id": 7,
     "name": "Trimegah Asset Management",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYmZ0H_smAJP4Y4PM_ossij3mXGdMlt4IWg&usqp=CAU",
-    "description": "Trimegah Asset Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang No. 8 tahun 1995 tentang Pasar Modal. SUCORINVEST MAXI FUND bertujuan untuk memberikan apresiasi modal dan tingkat keuntungan yang optimal dalam jangka panjang dengan cara mengkapitalisasi pasar modal Indonesia. <br><br> Trimegah Asset Management akan melakukan investasi dengan komposisi portofolio investasi minimum 80% (delapan puluh persen) dan maksimum 100% (seratus persen) dari Nilai Aktiva Bersih pada Efek bersifat ekuitas yang diterbitkan oleh korporasi yang dijual dalam Penawaran Umum dan/atau diperdagangkan di Bursa Efek Indonesia; minimum 0% (nol persen) dan maksimum 20% (dua puluh persen) dari Nilai Aktiva Bersih pada instrumen pasar uang dalam negeri yang mempunyai jatuh tempo kurang dari 1(satu) tahun dan/atau deposito; sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia. <br><br> Manajer Investasi akan selalu menyesuaikan kebijakan investasi tersebut diatas dengan Peraturan OJK yang berlaku dan kebijakan-kebijakan yang dikeluarkan oleh OJK",
-    "riskLevel": 2,
-    "growth": 6
+    "description": "Trimegah Asset Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang No. 8 tahun 1995 tentang Pasar Modal. SUCORINVEST MAXI FUND bertujuan untuk memberikan apresiasi modal dan tingkat keuntungan yang optimal dalam jangka panjang dengan cara mengkapitalisasi pasar modal Indonesia. <br><br> Trimegah Asset Management akan melakukan investasi dengan komposisi portofolio investasi minimum 80% (delapan puluh persen) dan maksimum 100% (seratus persen) dari Nilai Aktiva Bersih pada Efek bersifat ekuitas yang diterbitkan oleh korporasi yang dijual dalam Penawaran Umum dan/atau diperdagangkan di Bursa Efek Indonesia; minimum 0% (nol persen) dan maksimum 20% (dua puluh persen) dari Nilai Aktiva Bersih pada instrumen pasar_uang dalam negeri yang mempunyai jatuh tempo kurang dari 1(satu) tahun dan/atau deposito; sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia. <br><br> Manajer Investasi akan selalu menyesuaikan kebijakan investasi tersebut diatas dengan Peraturan OJK yang berlaku dan kebijakan-kebijakan yang dikeluarkan oleh OJK",
+    "risk_level": 2,
+    "growth": 6,
+    "allocationAssets": { 
+      "obligasi_pemerintah": 50,
+      "obligasi_korporasi": 40,
+      "pasar_uang": 10
+    }
   },
   {
     "id": 8,
     "name": "Majoris Asset Management",
     "image": "https://images.bisnis.com/posts/2018/01/29/731633/majorisam.jpg",
     "description": "REKSA DANA Majoris Asset Management adalah Reksa Dana Berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang Nomor 8 tahun 1995 tentang Pasar Modal beserta peraturan pelaksanaannya. <br><br> REKSA DANA Majoris Asset Management bertujuan untuk memberikan hasil investasi yang setara dengan kinerja Indeks FTSE Indonesia ESG yang diterbitkan oleh FTSE Russell.",
-    "riskLevel": 2,
-    "growth": 2
+    "risk_level": 2,
+    "growth": 2,
+    "allocationAssets": {
+      "obligasi_pemerintah": 50,
+      "obligasi_korporasi": 40,
+      "pasar_uang": 10
+    }
   },
   {
     "id": 9,
     "name": "EMCO Asset Management",
     "image": "https://financial.sinarmassekuritas.co.id/download/daily_news/KONTAN13650.jpg",
     "description": "Reksa Dana EMCO Asset Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang tentang Pasar Modal beserta peraturan pelaksanaannya. <br><br> Reksa Dana EMCO Asset Management (selanjutnya disebut “EMCO Asset Management“) bertujuan mendapatkan kenaikan modal dalam jangka panjang dengan berinvestasi pada saham perusahaan berkapitalisasi pasar besar yang terdaftar di Bursa Efek Indonesia.",
-    "riskLevel": 3,
-    "growth": 17
+    "risk_level": 3,
+    "growth": 17,
+    "allocationAssets": { 
+      "obligasi_pemerintah": 40,
+      "obligasi_korporasi": 50,
+      "pasar_uang": 10
+    }
   },
   {
     "id": 10,
     "name": "Maybank Asset",
     "image": "https://bernama.com/storage/photos/342992ba806463439758c256ade3d6cd5e9d32748d133",
     "description": "REKSA DANA Maybank Asset Management adalah Reksa, Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang No. 8 tahun 1995 tentang Pasar Modal beserta peraturan pelaksanaannya. <br><br> Maybank Asset Management bertujuan untuk memperoleh peningkatan nilai investasi yang maksimal berupa capital gain dan dividen melalui investasi pada Efek bersifat ekuitas.",
-    "riskLevel": 1,
-    "growth": 7
+    "risk_level": 1,
+    "growth": 7,
+    "allocationAssets": { 
+      "obligasi_pemerintah": 5,
+      "obligasi_korporasi": 5,
+      "pasar_uang": 90
+    }
   }
 ]

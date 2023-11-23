@@ -15,6 +15,8 @@ module.exports = {
          */
 
         let companies = JSON.parse(await fs.readFile("./data/companies.json", "utf-8")).map(item => {
+            delete item.id;
+            delete item.allocationAssets;
             item.createdAt = new Date();
             item.updatedAt = new Date();
             return item;
